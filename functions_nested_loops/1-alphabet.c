@@ -3,7 +3,7 @@
 * main - void
 * Return: Always 0.
 **/
-int main(void)
+int print_alphabet(void)
 {
 	char i;
 
