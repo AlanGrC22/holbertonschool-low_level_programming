@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_sign - void
- * @c: character
+ * @n: character
  * Return: Always 0.
 **/
 int print_sign(int n)
@@ -21,4 +21,5 @@ int print_sign(int n)
 		_putchar('-');
 		return (-1);
 	}
+	return (0);
 }
