@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *times_table - tabla del 9
- *@a, @b, @c: is a int
+ * times_table - tabla del 9
+ * @a, @b, @c: is a int
 **/
 void times_table(void)
 {
