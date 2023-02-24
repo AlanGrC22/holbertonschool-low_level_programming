@@ -3,6 +3,7 @@
 /**
  * times_table - tabla del 9
  * @a, @b, @c: is a int
+ * return: times table
 **/
 void times_table(void)
 {
