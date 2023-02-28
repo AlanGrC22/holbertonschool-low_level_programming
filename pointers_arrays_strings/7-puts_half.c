@@ -1,11 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * puts2 - print every other character of a string,
- *         starting with the first character
+ * puts_half - Write a function that prints half of a string
  * @str: string
 */
-void puts2(char *str)
+void puts_half(char *str)
 {
 	int i;
 	int f = 0;
