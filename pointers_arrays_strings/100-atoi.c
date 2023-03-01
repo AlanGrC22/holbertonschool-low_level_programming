@@ -25,6 +25,5 @@ int _atoi(char *s)
 		i++;
 	}
 	r *= sig;
-	printf("\n");
 	return (r);
 }
