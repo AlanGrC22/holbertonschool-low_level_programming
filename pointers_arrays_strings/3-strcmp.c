@@ -2,28 +2,21 @@
 #include <stdio.h>
 /**
 * _strcmp - Write a function that compares two strings
-* @s1: destino
-* @s2: source
+* @s1: string1
+* @s2: string2
 * Return: Always 0
 **/
 int _strcmp(char *s1, char *s2)
 {
-	int a = 0;
 
-	while (*(s1 + a) == *(s2 + a))
+	while (*s1 && *s2)
 	{
-		if (*(s1 + a) == '0' || *(s2 + a) == '0')
+		if (*s1 && *s2)
 		{
-			break;
+			return (*s1 - *s2);
 		}
+		s1++;
+		s2++;
 	}
-	a++;
-	if (*(s1 + a) == '0' && *(s2 + a) == '0')
-	{
-		return (0);
-	}
-	else
-	{
-		return (-1);
-	}
+	return (0);
 }
