@@ -4,22 +4,26 @@
 * _strcmp - Write a function that compares two strings
 * @s1: destino
 * @s2: source
-* Return: dest
+* Return: Always 0
 **/
 int _strcmp(char *s1, char *s2)
 {
-	int a;
-	int b;
+	int a = 0;
 
-	for (b = 0; s1[b] != '\0'; b++)
+	while (*(s1 + a) == *(s2 + a))
 	{
-		;
+		if (*(s1 + a) == '0' || *(s2 + a) == '0')
+		{
+			break;
+		}
 	}
-	for (a = 0; s2[a] != '\0'; a++)
+	a++;
+	if (*(s1 + a) == '0' && *(s2 + a) == '0')
 	{
-		s1[b + a] == s2[a];
+		return (0);
 	}
-	s1[b + a] = '\0';
-	return (*s1);
-
+	else
+	{
+		return (-1);
+	}
 }
