@@ -25,12 +25,10 @@ int _sqrt_recursion(int n)
 
 int _sqrt(int n, int s, int e)
 {
-	if (s > e)
-		return (-1);
-
 	int m = (s + e) / 2;
 	int sqre = m * m;
-
+	if (s > e)
+		return (-1);
 	if (sqre == n)
 		return (m);
 	if (sqre > n)
