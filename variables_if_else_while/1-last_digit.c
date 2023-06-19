@@ -5,24 +5,27 @@
  * main - This program will assign a random number to the variable n
  *        each time it is executed. Complete the source code in order
  *        to print the last digit of the number stored in the variable n.
+ * Return: Always 0
  **/
 int main(void)
 {
-	int n;
+	int n, LastD;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 5)
+	LastD = n % 10;
+
+	if (LastD > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, n);
+		printf("Last digit of %d is %d and is greater than 5\n", n, LastD);
 	}
-	if (n == 0)
+	else if (LastD == 0)
 	{
-		printf("Last digit of %d is %d and is 0", n, n);
+		printf("Last digit of %d is %d and is 0", n, LastD);
 	}
-	if (n % 6)
+	else if (LastD < 6 && LastD != 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, LastD);
 	}
 	return (0);
 }
