@@ -12,11 +12,10 @@ int main(void)
 	{
 		putchar (alphabet);
 	}
-		putchar('\n');
 	for (alphabetup = 'A'; alphabetup <= 'Z'; alphabetup++)
 	{
 		putchar (alphabetup);
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
