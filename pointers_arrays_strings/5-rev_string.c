@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * Write a function that reverses a string.
+ * rev_string - Write a function that reverses a string.
  * @s: string
  **/
 void rev_string(char *s)
@@ -11,7 +11,7 @@ void rev_string(char *s)
 
 	while (s[count] != '\0')
 		count++;
-	j = count -1;
+	j = count - 1;
 	for (i = 0; i < j; i++)
 	{
 		aux = s[i];
